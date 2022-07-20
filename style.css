@@ -24,7 +24,20 @@ main{
 /* --------------------------------------------Animation Background Color------------------------------------------ */
 
 
-
+@keyframes color {
+    0%   { background: #000613; }
+    20%  { background: #00205f; }
+    40%  { background: #001846; }
+    60%  { background: #2c000f; }
+    80%  { background: #000f2c; }
+    100% { background: #0f2c00; }
+  }
+  
+  .container {
+    background: #000f2c; /* Fallback */
+    animation: color 9s infinite linear;
+    padding: 2em;
+  }
 
 
 /* ----------------------------------------banner style ----------------------------*/
